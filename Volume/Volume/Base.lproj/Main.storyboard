@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="oi0-81-0Qf">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Volume" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wBH-ug-MXs">
+                                <rect key="frame" x="247" y="513" width="73" height="42"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="73" id="ERT-FB-oNG"/>
+                                    <constraint firstAttribute="height" constant="42" id="ezx-Iu-E39"/>
+                                </constraints>
+                                <state key="normal" title="朗读"/>
+                                <connections>
+                                    <action selector="buttonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pvv-Wy-MIY"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="60e-N9-0zc">
+                                <rect key="frame" x="0.0" y="64" width="320" height="435"/>
+                                <color key="backgroundColor" red="1" green="0.96298634549999995" blue="0.75648230900000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="435" id="5Q7-nw-Uiv"/>
+                                </constraints>
+                                <mutableString key="text">《守望先锋》暴雪首款团队射击游戏，5月24日全球同步上市。在游戏中，你会看到时间跳跃的冒险家、挥舞火箭重锤的重装骑士、超凡的机械僧侣，超过20位个性鲜明的英雄将在世界各地的史诗级战场上激烈厮杀，立即购买《守望先锋》加入未来之战，这个世界需要更多英雄！《守望先锋》暴雪首款团队射击游戏，5月24日全球同步上市。在游戏中，你会看到时间跳跃的冒险家、挥舞火箭重锤的重装骑士、超凡的机械僧侣，超过20位个性鲜明的英雄将在世界各地的史诗级战场上激烈厮杀，立即购买《守望先锋》加入未来之战，这个世界需要更多英雄！《守望先锋》暴雪首款团队射击游戏，5月24日全球同步上市。在游戏中，你会看到时间跳跃的冒险家、挥舞火箭重锤的重装骑士、超凡的机械僧侣，超过20位个性鲜明的英雄将在世界各地的史诗级战场上激烈厮杀，立即购买《守望先锋》加入未来之战，这个世界需要更多英雄！守望先锋》暴雪首款团队射击游戏，5月24日全球同步上市。在游戏中，你会看到时间跳跃的冒险家、挥舞火箭重锤的重装骑士、超凡的机械僧侣，超过20位个性鲜明的英雄将在世界各地的史诗级战场上激烈厮杀，立即购买《守望先锋》加入未来之战，这个世界需要更多英雄！</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="ZVJ-Mk-rzb">
+                                <rect key="frame" x="18" y="518" width="207" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="cbl-Xt-oyx"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="sliderAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="lTy-9V-eIW"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="60e-N9-0zc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="330-Pu-yoC"/>
+                            <constraint firstItem="wBH-ug-MXs" firstAttribute="leading" secondItem="ZVJ-Mk-rzb" secondAttribute="trailing" constant="24" id="4T6-lY-1Uu"/>
+                            <constraint firstAttribute="trailing" secondItem="wBH-ug-MXs" secondAttribute="trailing" id="Eag-lc-WlP"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="wBH-ug-MXs" secondAttribute="bottom" constant="13" id="MOo-wP-TCU"/>
+                            <constraint firstItem="60e-N9-0zc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="SGK-Nh-rn0"/>
+                            <constraint firstAttribute="trailing" secondItem="60e-N9-0zc" secondAttribute="trailing" id="dEj-jm-OWF"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ZVJ-Mk-rzb" secondAttribute="bottom" constant="20" id="hiG-XT-XwG"/>
+                            <constraint firstItem="ZVJ-Mk-rzb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="lY0-o0-jtn"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="PpH-0g-dRl"/>
+                    <connections>
+                        <outlet property="readButton" destination="wBH-ug-MXs" id="p5Y-1W-g1K"/>
+                        <outlet property="slider" destination="ZVJ-Mk-rzb" id="7Pb-ae-p4W"/>
+                        <outlet property="textLabel" destination="60e-N9-0zc" id="uRq-k7-P7C"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="666" y="453"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Ycf-z7-aaj">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="oi0-81-0Qf" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="FAJ-8h-ed0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="SLn-uT-Cca"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2KH-sj-sHc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="233.06666666666666" y="1078.2533333333333"/>
+        </scene>
+    </scenes>
+</document>
